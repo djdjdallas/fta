@@ -2,7 +2,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import "@/app/globals.css";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -30,7 +29,7 @@ export default function Home() {
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 relative">
               <Image
-                src="/images/taste-logo.png"
+                src="/images/next.svg"
                 alt="Taste Without Borders Logo"
                 width={40}
                 height={40}
@@ -74,21 +73,21 @@ export default function Home() {
               culinary insights.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#"
-                className="flex items-center bg-white text-black px-4 py-2 rounded-lg transition-transform hover:scale-105"
-              >
+              <a href="#" className="transition-transform hover:scale-105">
                 <Image
-                  src="https://cdn.prod.website-files.com/67bef9e86b8644907aae789b/67befe1c315fb4f90a9c7362_Apple16.svg"
-                  alt="Apple Logo"
-                  width={24}
-                  height={24}
-                  className="mr-2"
+                  src="/images/vercel.svg"
+                  alt="Download on App Store"
+                  width={150}
+                  height={50}
                 />
-                <div className="flex flex-col">
-                  <span className="text-xs">Download on the</span>
-                  <span className="text-base font-semibold">App Store</span>
-                </div>
+              </a>
+              <a href="#" className="transition-transform hover:scale-105">
+                <Image
+                  src="/images/vercel.svg"
+                  alt="Get it on Google Play"
+                  width={150}
+                  height={50}
+                />
               </a>
             </div>
           </div>
@@ -251,37 +250,21 @@ export default function Home() {
             delicious adventure!
           </p>
           <div className="flex flex-wrap justify-center gap-6">
-            <a
-              href="#"
-              className="flex items-center bg-white text-black px-6 py-3 rounded-lg transition-transform hover:scale-105"
-            >
+            <a href="#" className="transition-transform hover:scale-105">
               <Image
-                src="https://cdn.prod.website-files.com/67bef9e86b8644907aae789b/67befe1c315fb4f90a9c7362_Apple16.svg"
-                alt="Apple Logo"
-                width={30}
-                height={30}
-                className="mr-3"
+                src="/images/vercel.svg"
+                alt="Download on App Store"
+                width={180}
+                height={60}
               />
-              <div className="flex flex-col text-left">
-                <span className="text-xs">Download on the</span>
-                <span className="text-lg font-semibold">App Store</span>
-              </div>
             </a>
-            <a
-              href="#"
-              className="flex items-center bg-black text-white px-6 py-3 rounded-lg transition-transform hover:scale-105"
-            >
-              <svg
-                className="w-6 h-6 mr-3"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 0 1-.609-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.932-3.932l-2.302 2.302-8.635-8.635 10.937 6.333zm2.932 3.218c0 .421-.229.797-.569 1.004l-2.298 1.331-2.862-2.862 2.862-2.862 2.298 1.331c.34.207.569.583.569 1.004v1.054z" />
-              </svg>
-              <div className="flex flex-col text-left">
-                <span className="text-xs">Get it on</span>
-                <span className="text-lg font-semibold">Google Play</span>
-              </div>
+            <a href="#" className="transition-transform hover:scale-105">
+              <Image
+                src="/images/vercel.svg"
+                alt="Get it on Google Play"
+                width={180}
+                height={60}
+              />
             </a>
           </div>
         </div>
@@ -348,7 +331,7 @@ export default function Home() {
               <div className="flex items-center space-x-2 mb-6">
                 <div className="w-8 h-8 relative">
                   <Image
-                    src="/images/taste-logo.png"
+                    src="/images/next.svg"
                     alt="Taste Without Borders Logo"
                     width={32}
                     height={32}

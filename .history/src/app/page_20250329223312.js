@@ -1,8 +1,6 @@
-"use client";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import "@/app/globals.css";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -30,10 +28,10 @@ export default function Home() {
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 relative">
               <Image
-                src="/images/taste-logo.png"
+                src="/logo.svg"
                 alt="Taste Without Borders Logo"
-                width={40}
-                height={40}
+                layout="fill"
+                objectFit="contain"
               />
             </div>
             <span className="font-semibold text-lg">Taste Without Borders</span>
@@ -74,31 +72,31 @@ export default function Home() {
               culinary insights.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#"
-                className="flex items-center bg-white text-black px-4 py-2 rounded-lg transition-transform hover:scale-105"
-              >
+              <a href="#" className="transition-transform hover:scale-105">
                 <Image
-                  src="https://cdn.prod.website-files.com/67bef9e86b8644907aae789b/67befe1c315fb4f90a9c7362_Apple16.svg"
-                  alt="Apple Logo"
-                  width={24}
-                  height={24}
-                  className="mr-2"
+                  src="/app-store.svg"
+                  alt="Download on App Store"
+                  width={150}
+                  height={50}
                 />
-                <div className="flex flex-col">
-                  <span className="text-xs">Download on the</span>
-                  <span className="text-base font-semibold">App Store</span>
-                </div>
+              </a>
+              <a href="#" className="transition-transform hover:scale-105">
+                <Image
+                  src="/play-store.svg"
+                  alt="Get it on Google Play"
+                  width={150}
+                  height={50}
+                />
               </a>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
             <div className="relative h-[500px] w-[250px]">
               <Image
-                src="/images/hero.png"
+                src="/hero-phone.png"
                 alt="Taste Without Borders App"
-                width={300}
-                height={600}
+                layout="fill"
+                objectFit="contain"
                 className="drop-shadow-xl"
               />
             </div>
@@ -207,28 +205,28 @@ export default function Home() {
             <div className="grid grid-cols-3 gap-4">
               <div className="relative h-80 w-40 drop-shadow-lg">
                 <Image
-                  src="/images/2.png"
+                  src="/screenshot1.png"
                   alt="App Screenshot"
-                  width={160}
-                  height={320}
+                  layout="fill"
+                  objectFit="contain"
                   className="rounded-xl"
                 />
               </div>
               <div className="relative h-80 w-40 drop-shadow-lg -mt-8">
                 <Image
-                  src="/images/3.png"
+                  src="/screenshot2.png"
                   alt="App Screenshot"
-                  width={160}
-                  height={320}
+                  layout="fill"
+                  objectFit="contain"
                   className="rounded-xl"
                 />
               </div>
               <div className="relative h-80 w-40 drop-shadow-lg">
                 <Image
-                  src="/images/4.png"
+                  src="/screenshot3.png"
                   alt="App Screenshot"
-                  width={160}
-                  height={320}
+                  layout="fill"
+                  objectFit="contain"
                   className="rounded-xl"
                 />
               </div>
@@ -251,59 +249,22 @@ export default function Home() {
             delicious adventure!
           </p>
           <div className="flex flex-wrap justify-center gap-6">
-            <a
-              href="#"
-              className="flex items-center bg-white text-black px-6 py-3 rounded-lg transition-transform hover:scale-105"
-            >
+            <a href="#" className="transition-transform hover:scale-105">
               <Image
-                src="https://cdn.prod.website-files.com/67bef9e86b8644907aae789b/67befe1c315fb4f90a9c7362_Apple16.svg"
-                alt="Apple Logo"
-                width={30}
-                height={30}
-                className="mr-3"
+                src="/app-store.svg"
+                alt="Download on App Store"
+                width={180}
+                height={60}
               />
-              <div className="flex flex-col text-left">
-                <span className="text-xs">Download on the</span>
-                <span className="text-lg font-semibold">App Store</span>
-              </div>
             </a>
-            <a
-              href="#"
-              className="flex items-center bg-black text-white px-6 py-3 rounded-lg transition-transform hover:scale-105"
-            >
-              <svg
-                className="w-6 h-6 mr-3"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 0 1-.609-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.932-3.932l-2.302 2.302-8.635-8.635 10.937 6.333zm2.932 3.218c0 .421-.229.797-.569 1.004l-2.298 1.331-2.862-2.862 2.862-2.862 2.298 1.331c.34.207.569.583.569 1.004v1.054z" />
-              </svg>
-              <div className="flex flex-col text-left">
-                <span className="text-xs">Get it on</span>
-                <span className="text-lg font-semibold">Google Play</span>
-              </div>
+            <a href="#" className="transition-transform hover:scale-105">
+              <Image
+                src="/play-store.svg"
+                alt="Get it on Google Play"
+                width={180}
+                height={60}
+              />
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Highlight Section with Screenshot */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            Dive Into Flavor
-          </h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            A whimsical description awaits with every dish you discover
-          </p>
-          <div className="max-w-md mx-auto">
-            <Image
-              src="/images/5.png"
-              alt="Food description feature"
-              width={300}
-              height={600}
-              className="rounded-xl shadow-xl mx-auto"
-            />
           </div>
         </div>
       </section>
@@ -348,10 +309,10 @@ export default function Home() {
               <div className="flex items-center space-x-2 mb-6">
                 <div className="w-8 h-8 relative">
                   <Image
-                    src="/images/taste-logo.png"
+                    src="/logo.svg"
                     alt="Taste Without Borders Logo"
-                    width={32}
-                    height={32}
+                    layout="fill"
+                    objectFit="contain"
                   />
                 </div>
                 <span className="font-semibold">Taste Without Borders</span>

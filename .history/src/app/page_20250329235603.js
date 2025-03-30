@@ -90,6 +90,22 @@ export default function Home() {
                   <span className="text-base font-semibold">App Store</span>
                 </div>
               </a>
+              <a
+                href="#"
+                className="flex items-center bg-black text-white px-4 py-2 rounded-lg transition-transform hover:scale-105"
+              >
+                <svg
+                  className="w-5 h-5 mr-2"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 0 1-.609-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.932-3.932l-2.302 2.302-8.635-8.635 10.937 6.333zm2.932 3.218c0 .421-.229.797-.569 1.004l-2.298 1.331-2.862-2.862 2.862-2.862 2.298 1.331c.34.207.569.583.569 1.004v1.054z" />
+                </svg>
+                <div className="flex flex-col">
+                  <span className="text-xs">Get it on</span>
+                  <span className="text-base font-semibold">Google Play</span>
+                </div>
+              </a>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
